@@ -23,6 +23,8 @@ for a in "${@}"; do
 done
 
 if [ "${1}" = "ambassador" ]; then
+  args=("${args[@]:1}")
+
   echo "Running grand-ambassador \"/usr/bin/grand-ambassador ${args[@]:1}\""
   exec /usr/bin/grand-ambassador "${args[@]:1}"
 else
