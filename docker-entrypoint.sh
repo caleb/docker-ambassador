@@ -9,7 +9,7 @@ if [ -n "${LINKS}" ]; then
     containers+=("${link}")
   done
 else
-  echo "You must specify the LINKS environement variable as a space delimited list of containers" >&2
+  echo "You must specify the LINKS environment variable as a space delimited list of containers" >&2
   exit 1
 fi
 
